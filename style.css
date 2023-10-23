@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@keyframes shadow-drop-center {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  @keyframes shadow-drop-2-center {
+    0% {
+      transform: translateZ(0);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      transform: translateZ(50px);
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
+  @keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
+
+  @keyframes slide-in-fwd-center {
+    0% {
+      transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+header {
+    padding-top: 30px ;
+    padding-bottom: 25px;
+    background-color: rgb(19, 26, 19);
+}
+
+.logo {
+    font-family: 'ADLaM Display', cursive;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    font-family: 'ADLaM Display', cursive;
+    font-size: 16px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 620px;
+}
+
+li {
+    margin-right: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li:hover {
+    color: rgb(216, 228, 216);
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.GeralNoticia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.Noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 20%;
+    margin: 0 30px;
+}
+
+.ImagemNoticia {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.noticia-imagem {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.Noticia p {
+    font-size: 18px;
+}
+
+.TituloIndex {
+    font-size: 22px;
+    font-family: 'ADLaM Display', cursive;
+    margin-left: 340px;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    max-width: 100%;
+}
+
+.GeralNoticia > .Noticia {
+    flex-grow: 1;
+    flex-basis: 30%;
+    max-width: 30%;
+}
+
+.TituloIndex {
+    font-size: 22px;
+    font-family: 'ADLaM Display', cursive;
+    padding-top: 30px;
+    position: relative;
+    top: 40px;
+    
+}
+
+.BarraNoticias{
+    background-color: bisque;
+    margin-right: 30px;
+
+}
+
+.BarraNoticias ul {
+    color: black;
+}
+
+.video-games-historia-corpo{
+    display: flex;
+    flex-direction: column;
+    margin-top:180px ;
+}
+
+.video-games-historia {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    margin-bottom: 40px;
+    transform: translate(-50%, -50%);
+    border: 1px solid  rgba(43, 53, 43, 0.322);
+    justify-content: center;
+    align-items: center;
+}
+.historia-imagem {
+    width: 450px;
+    height: auto;
+    margin: 20px;
+}
+
+.historia-texto {
+    width: 40%;
+    margin: 20px;
+    justify-content: center;
+}
+
+.corpo-sobre {
+    display: flex;
+    flex-direction: column;
+    margin-top:250px ;
+}
+.sobre{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-imagem {
+    width: 400px;
+    height: auto;
+    margin: 20px;
+    border: 1px rgb(129, 129, 129) solid;
+    border-radius: 50%;
+    animation: slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.sobre-texto{
+    width: 40%;
+    margin: 10px;
+    justify-content: center;
+    animation: go-back 1.5s;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    background-color:  rgb(19, 26, 19);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.email-links {
+    font-size: 14px;
+}
+
+.email-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+
+.search-box-input::placeholder {
+    
+    color:#ffffff;
+    opacity: 0.6;
+
+}
+
+.box-busca{
+    margin-left:400px;
+}
+.search-box form {
+    
+    display: flex;
+    border-radius: 50px;
+    background-color: #ffffff;
+    height: 20px;
+
+}
+
+
+.search-box-input {
+
+    outline: 0;
+    font-size: 0.8em;
+    color: #000000;
+    width: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+
+}
+
+.search-box-button {
+
+   display: flex;
+   padding-left: 20px;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+   background-color: #14c0c7;
+   border: none;
+   cursor: pointer;
+   transition: .3s;
+
+}
+
+.search-box-icone {
+
+    margin: auto;
+    color: #fff;
+
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modo-claro {
+    background-color: #fff;
+    color: #000;
+}
+
+.modo-escuro {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.modo-claro-escuro {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 20px; 
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position:  fixed;
+    top: 10px;
+    right: 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.modo-claro-escuro::before {
+    content: "\f186"; 
+    font-family: "Font Awesome 5 Free";
+    font-size: 14px;
+    position: absolute;
+}
+
+.modo-escuro .modo-claro-escuro::before {
+    color: #fff;
+}
